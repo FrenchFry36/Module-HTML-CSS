@@ -1,1 +1,179 @@
 /*  Add your styling here */
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+header {
+  background-color: #00a6d4;
+  color: #1d1d1b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.hamburger-menu {
+  display: none; /* Initially hide the hamburger menu */
+  flex-direction: column;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  align-items: center; /* Align items vertically in the hamburger menu */
+}
+
+/* Default styles for the navigation */
+nav {
+  background-color: #f5f5f5;
+  color: #00a6d4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding: 20px;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center; /* Align items vertically in the navigation */
+}
+
+.flex-nav a {
+  border: solid;
+  border-radius: 2px;
+  padding: 10px 20px 20px;
+  text-decoration: none;
+}
+
+/* Media query to show the hamburger menu on mobile screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Show the hamburger menu on mobile screens */
+  }
+
+  /* You can add additional styles for the hamburger menu on mobile screens here */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #00a6d4;
+  margin: 30px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .flex-nav {
+    display: none; /* Hide the navigation links */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show the hamburger menu */
+  }
+}
+
+.flex-nav a {
+  border: solid;
+  border-radius: none;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #00a6d4;
+  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+a:hover {
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #1d1d1b;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #1d1d1b;
+  font-size: 14px;
+}
+
+/* Default styles */
+main {
+  display: flex;
+  flex-direction: row; /* Display text and image side by side by default */
+}
+
+.main-image {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+}
+
+/* Media query for responsive design (e.g., for cell phones) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Display text under the image on smaller screens */
+  }
+
+  .main-image {
+    width: 100%; /* Adjust the image width as needed */
+    height: auto; /* Allow the image to scale proportionally */
+  }
+}
+
+content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media query for responsive design (e.g., for cell phones) */
+@media (max-width: 768px) {
+  content {
+    flex-direction: column; /* Display text under the image on smaller screens */
+  }
+
+  .content-image {
+    width: 100%; /* Adjust the image width as needed */
+    height: auto; /* Allow the image to scale proportionally */
+  }
+}
+/* footer */
+footer {
+  background-color: #00a6d4;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.contact-info > div {
+  margin: 20px;
+}
+
+.copy {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav,
+  img,
+  .header,
+  content {
+    width: 100%;
+  }
+}
