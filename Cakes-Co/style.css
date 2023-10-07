@@ -15,13 +15,56 @@ header {
   padding: 10px;
 }
 
+/* Initially hide the hamburger menu */
+/* Initially hide the hamburger menu */
+/* Position the menu container to the top right corner */
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the hamburger icon */
+/* Style the hamburger icon */
+.burger-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+/* Hide the checkbox */
+.checkbox-burger {
+  display: none;
+}
+
+/* Style the hamburger menu */
 .hamburger-menu {
-  display: none; /* Initially hide the hamburger menu */
+  display: none;
   flex-direction: column;
   cursor: pointer;
-  color: white;
-  padding: 10px;
-  align-items: center; /* Align items vertically in the hamburger menu */
+  color: black;
+  padding: 2px;
+  position: fixed;
+  top: 50px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+/* Show the hamburger menu when the checkbox is checked */
+.checkbox-burger:checked ~ .hamburger-menu {
+  display: flex;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for cellphones) */
+@media (max-width: 768px) {
+  /* Adjust the hamburger menu position for smaller screens if needed */
+  .hamburger-menu {
+    top: 5000px; /* Adjust the top position as needed */
+    right: 80px; /* Adjust the right position as needed */
+  }
 }
 
 /* Default styles for the navigation */
