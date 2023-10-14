@@ -6,10 +6,6 @@ body {
   font-family: "Poppins", Arial, sans-serif;
 }
 
-p {
-  width: 80vw;
-}
-
 header {
   background-color: #00a6d4;
   color: #1d1d1b;
@@ -51,7 +47,10 @@ nav {
 
 .flex-nav {
   display: flex;
-  align-items: center; /* Align items vertically in the navigation */
+  align-items: center;
+  margin-top: 1em;
+  column-gap: 5px;
+  /* Align items vertically in the navigation */
 }
 
 .flex-nav a {
@@ -63,7 +62,7 @@ nav {
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
-  #burger:checked + .flex-nav{
+  #burger:checked + .flex-nav {
     display: flex;
   }
   .flex-nav {
