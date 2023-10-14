@@ -6,6 +6,10 @@ body {
   font-family: "Poppins", Arial, sans-serif;
 }
 
+p {
+  width: 80vw;
+}
+
 header {
   background-color: #00a6d4;
   color: #1d1d1b;
@@ -31,40 +35,14 @@ header {
 .burger-icon {
   font-size: 24px;
   cursor: pointer;
-  position: fixed;
-  top: 10px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
+  position: absolute;
+  top: 0; /* Adjust the top position as needed */
+  right: 0; /* Adjust the right position as needed */
 }
 
 /* Hide the checkbox */
 .checkbox-burger {
   display: none;
-}
-
-/* Style the hamburger menu */
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  color: black;
-  padding: 2px;
-  position: fixed;
-  top: 50px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
-}
-
-/* Show the hamburger menu when the checkbox is checked */
-.checkbox-burger:checked ~ .hamburger-menu {
-  display: flex;
-}
-
-/* Media query for screens with a maximum width of 768px (typical for cellphones) */
-@media (max-width: 768px) {
-  /* Adjust the hamburger menu position for smaller screens if needed */
-  .hamburger-menu {
-    top: 5000px; /* Adjust the top position as needed */
-    right: 80px; /* Adjust the right position as needed */
-  }
 }
 
 /* Default styles for the navigation */
@@ -73,8 +51,7 @@ nav {
   color: #00a6d4;
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
-  padding: 20px;
+
 }
 
 .flex-nav {
@@ -89,31 +66,20 @@ nav {
   text-decoration: none;
 }
 
-/* Media query to show the hamburger menu on mobile screens */
-@media (max-width: 768px) {
-  .hamburger-menu {
-    display: flex; /* Show the hamburger menu on mobile screens */
-  }
-
-  /* You can add additional styles for the hamburger menu on mobile screens here */
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #00a6d4;
-  margin: 30px;
-}
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
   .flex-nav {
-    display: none; /* Hide the navigation links */
+    /* display: none; Hide the navigation links */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
   }
 
-  .hamburger-menu {
-    display: flex; /* Show the hamburger menu */
+  nav {
+     justify-content: stretch;
   }
+
 }
 
 .flex-nav a {
@@ -160,17 +126,16 @@ main {
 }
 
 .main-image {
-  max-width: 100%; /* Ensure the image doesn't overflow */
+  width: 100%; /* Ensure the image doesn't overflow */
 }
 
 /* Media query for responsive design (e.g., for cell phones) */
 @media (max-width: 768px) {
   main {
-    flex-direction: column; /* Display text under the image on smaller screens */
+    flex-direction: column-reverse; /* Display text under the image on smaller screens */
   }
 
   .main-image {
-    width: 100%; /* Adjust the image width as needed */
     height: auto; /* Allow the image to scale proportionally */
   }
 }
@@ -187,7 +152,6 @@ content {
   }
 
   .content-image {
-    width: 100%; /* Adjust the image width as needed */
     height: auto; /* Allow the image to scale proportionally */
   }
 }
@@ -212,11 +176,25 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  main,
-  nav,
-  img,
-  .header,
+  header img{
+  max-width: 40%;
+}
+
+  img {
+    height: auto;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
   content {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  nav {
   }
 }
