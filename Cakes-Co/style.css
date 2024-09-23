@@ -1,1 +1,48 @@
-/*  Add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----------- Header style ----------- */
+
+header {
+  padding: 0 10px 10px 10px;
+  display: flex;
+  gap: 5px;
+  background: linear-gradient(180deg, #7355cc 20%, #ef3791);
+}
+
+header img {
+  border-radius: 5px;
+  width: 50%;
+}
+
+.header-icon {
+  width: 30px;
+  overflow: hidden;
+}
+
+.header-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: invert(1);
+}
+
+.header-menu-text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-evenly;
+}
+
+.header-menu-text h3 {
+  width: 80%;
+  text-align: end;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Snell Roundhand, cursive;
+}
+
+/* ----------- Body style ----------- */
