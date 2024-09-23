@@ -13,9 +13,9 @@ header {
   background: linear-gradient(180deg, #7355cc 20%, #ef3791);
 }
 
-header img {
+.header-image {
   border-radius: 5px;
-  width: 50%;
+  max-width: 170px;
 }
 
 .header-icon {
@@ -43,6 +43,36 @@ header img {
   font-size: 1.5rem;
   color: white;
   font-family: Snell Roundhand, cursive;
+  line-height: 1.5rem;
 }
 
-/* ----------- Body style ----------- */
+/* ----------- Main style ----------- */
+
+body {
+  background: #7355cc;
+}
+
+main {
+  background: #e6d7ff;
+  padding: 10px;
+  color: #3b268d;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+main h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main p {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.big-image {
+}
+
+.big-image img {
+  width: 100%;
+  border-radius: 5px;
+}
