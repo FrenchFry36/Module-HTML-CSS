@@ -7,10 +7,10 @@
 /* ----------- Header style ----------- */
 
 header {
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 10px 20px;
   display: flex;
   gap: 5px;
-  background: linear-gradient(180deg, #7355cc 20%, #ef3791);
+  background: linear-gradient(180deg, #7355cc 20%, #ff78b9);
   justify-content: space-between;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 .header-menu-text h3 {
-  width: 80%;
+  width: 90%;
   text-align: end;
   font-size: 1.5rem;
   color: #eee;
@@ -54,7 +54,7 @@ body {
 
 main {
   background: #e6d7ff;
-  padding: 10px;
+  padding: 20px;
   color: #3b268d;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
@@ -88,19 +88,28 @@ p {
   margin-bottom: 20px;
 }
 
+.small-images-div {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .small-images-div img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.small-images-div img:hover {
+  transform: scale(1.1);
 }
 
 /* ----------- Footer style ----------- */
 
 footer {
-  background: linear-gradient(180deg, #ef3791 5%, #7355cc);
+  background: linear-gradient(180deg, #ff78b9 5%, #7355cc);
   font-family: Comic Sans MS, Comic Sans, cursive;
   color: #eee;
-  padding: 10px;
+  padding: 20px;
 }
 
 h4 {
