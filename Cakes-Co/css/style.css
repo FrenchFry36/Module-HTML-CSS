@@ -59,6 +59,32 @@ main {
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+.navbar {
+  background: #7355cc;
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #ff78b9;
+  transition: color 0.5s;
+}
+
 main h1 {
   text-align: center;
   margin-bottom: 10px;

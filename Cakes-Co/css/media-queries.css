@@ -1,2 +1,35 @@
-@media (max-width: 540px) {
+@media (min-width: 540px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* ----------- Header style ----------- */
+
+  .header-icon {
+    display: none;
+  }
+
+  .header-menu-text h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  /* ----------- Main style ----------- */
+
+  .navbar {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+  .big-image {
+    margin-bottom: 40px;
+  }
+  .small-image {
+    grid-gap: 15px;
+  }
 }
