@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-black: #000;
+  --main-white: #fff;
+  --lilac: #f5e8ff;
+  --light-green: #e6fac0;
+  --medium-green: #5e7d1f;
+  --dark-green: #394b2a;
+}
+
+main {
+  background-color: var(--light-green);
+}
+
+h3 {
+  font-family: "Questrial", sans-serif;
+}
