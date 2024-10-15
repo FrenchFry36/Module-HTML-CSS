@@ -13,10 +13,99 @@
   --dark-green: #394b2a;
 }
 
+/* ------- Header style ------- */
+
+header {
+  background-color: var(--main-white);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "a b . . . c c . . d e e";
+  height: 90px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+.menu-icon {
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-anchor {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-anchor > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-anchor img {
+  height: 25px;
+}
+
+.headliner {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-icon {
+  grid-area: d;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.order-button {
+  grid-area: e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-black);
+}
+
+.order-button a {
+  color: var(--main-white);
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.order-button:hover {
+  background-color: var(--medium-green);
+  transition: 0.5s;
+}
+
+header img {
+  height: 30px;
+}
+
+/* ------- Main style ------- */
+
 main {
   background-color: var(--light-green);
 }
 
-h3 {
+h1 {
   font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
