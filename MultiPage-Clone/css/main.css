@@ -13,6 +13,12 @@
   --dark-green: #394b2a;
 }
 
+h1 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ------- Header style ------- */
 
 header {
@@ -32,11 +38,68 @@ header a {
   color: var(--main-black);
 }
 
+/* ..... Menu ..... */
 .menu-icon {
   grid-area: a;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu-icon img {
+  cursor: pointer;
+}
+
+/* Menu open state */
+.menu.open {
+  left: 0; /* Move menu into view */
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -500px; /* Initially off the screen */
+  width: 500px;
+  height: 100%;
+  background-color: var(--main-black);
+  transition: left 0.3s ease; /* Smooth transition */
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+/* Menu links */
+.menu a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 2.5rem;
+}
+
+.menu a:hover {
+  color: var(--light-green);
+}
+
+/* The color of each anchor is different on each page */
+.menu a:nth-child(2) {
+  color: var(--light-green);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: transparent;
+  color: var(--main-white);
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.close-btn:hover {
+  color: var(--light-green);
 }
 
 .login-anchor {
@@ -83,7 +146,7 @@ header a {
 
 .order-button a {
   color: var(--main-white);
-  height: 90px;
+  height: 100%;
   width: 100%;
   text-align: center;
   align-content: center;
@@ -102,10 +165,5 @@ header img {
 
 main {
   background-color: var(--light-green);
-}
-
-h1 {
-  font-family: "Questrial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  height: 100vh;
 }

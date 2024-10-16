@@ -1,4 +1,5 @@
-
-const OVERFLOW = $('#toggle1');
-
-OVERFLOW.click(e => e.target.checked ? $("body").css("overflow-y", "hidden") : $("body").css("overflow-y", "auto"));
+// Toggle menu function
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("open"); // Add or remove the "open" class
+}

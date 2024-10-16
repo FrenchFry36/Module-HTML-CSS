@@ -29,8 +29,13 @@
   <body>
     <header>
       <div class="menu-icon">
-        <img src="../MultiPage-Clone/images/menu icon.png" alt="menu" />
+        <img
+          src="../MultiPage-Clone/images/menu icon.png"
+          alt="menu"
+          onclick="toggleMenu()"
+        />
       </div>
+
       <div class="login-anchor">
         <a href="#">
           <p>Log In</p>
@@ -50,35 +55,28 @@
       <div class="order-button">
         <a href="#" target="_blank" rel="noopener noreferrer">Order Online</a>
       </div>
-    </header>
-    <main>
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Story</a>
-            </li>
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Order Online</a>
-            </li>
-            <li>
-              <a href="#">Locations & Hours</a>
-            </li>
-          </ul>
-        </nav>
+
+      <!-- Menu slider -->
+      <div class="menu" id="menu">
+        <button class="close-btn" onclick="toggleMenu()">x</button>
+        <a href="../MultiPage-Clone/index.html">Home</a>
+
+        <a href="#">Story</a>
+
+        <a href="#">Menu</a>
+
+        <a href="#">Order Online</a>
+
+        <a href="#">Locations & Hours</a>
       </div>
-    </main>
+    </header>
+    <main></main>
     <footer>
       <p>
         This website design was created by Wix.com, and is used here for
         strictly educational purposes.
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
