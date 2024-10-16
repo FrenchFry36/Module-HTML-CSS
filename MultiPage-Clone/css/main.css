@@ -13,13 +13,20 @@
   --dark-green: #394b2a;
 }
 
-h1 {
+h1,
+h3 {
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* ------- Header style ------- */
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ------- HEADER STYLE ------- */
 
 header {
   background-color: var(--main-white);
@@ -31,6 +38,8 @@ header {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  position: fixed;
+  width: 100%;
 }
 
 header a {
@@ -62,7 +71,7 @@ header a {
   width: 500px;
   height: 100%;
   background-color: var(--main-black);
-  transition: left 0.3s ease; /* Smooth transition */
+  transition: left 0.5s ease; /* Smooth transition */
   padding-top: 100px;
   padding-left: 50px;
 }
@@ -161,9 +170,41 @@ header img {
   height: 30px;
 }
 
-/* ------- Main style ------- */
+/* ------- MAIN STYLE ------- */
 
 main {
   background-color: var(--light-green);
   height: 100vh;
+  padding-top: 90px;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  border: 2px solid var(--main-black);
+  padding: 20px 60px;
+  margin-top: 10px;
+}
+
+/* ..... Section 1 ..... */
+
+.hero-text-section {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--main-white);
+}
+
+.hero-text-section h1 {
+  font-size: 3.5rem;
+}
+
+.hero-text-section h3 {
+  font-size: 1.6rem;
 }
