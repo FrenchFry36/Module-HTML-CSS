@@ -173,8 +173,6 @@ header img {
 /* ------- MAIN STYLE ------- */
 
 main {
-  background-color: var(--light-green);
-  height: 100vh;
   padding-top: 90px;
 }
 
@@ -207,4 +205,15 @@ main {
 
 .hero-text-section h3 {
   font-size: 1.6rem;
+}
+
+/* ..... Section 2 ..... */
+
+.parallax-section {
+  height: 600px;
+  background-image: url("../images/Primary-Image-Best-Juice-Cleanses-of-2023-2000-43b07908f1604a119a33ca27916c709f.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
