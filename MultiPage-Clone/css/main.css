@@ -517,3 +517,15 @@ main {
 .gallery div img {
   width: 100%;
 }
+
+/* -------  FOOTER STYLE ------- */
+
+footer {
+  background-color: var(--dark-green);
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
