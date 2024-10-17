@@ -431,3 +431,13 @@ main {
 .discover-section button {
   width: 250px;
 }
+
+/* ..... Section 8 ..... */
+
+.get-juice-section {
+  padding-bottom: 80px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
