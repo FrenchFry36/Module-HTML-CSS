@@ -435,9 +435,42 @@ main {
 /* ..... Section 8 ..... */
 
 .get-juice-section {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: end;
+}
+
+/* ..... Section 9 ..... */
+
+.getting-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: var(--light-green);
+}
+
+.getting-section-cards {
+  width: 305px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.getting-section-cards h2 {
+  margin-bottom: 25px;
+}
+
+.getting-cards-icon {
+  border-radius: 100%;
+  border: 1px solid var(--main-black);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
