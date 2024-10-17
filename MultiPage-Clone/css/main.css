@@ -327,3 +327,18 @@ main {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+/* ..... Section 5 ..... */
+
+.chooseHeadliner-section {
+  background-color: var(--main-white);
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseHeadliner-section h1 {
+  position: relative;
+  top: 50px;
+}
