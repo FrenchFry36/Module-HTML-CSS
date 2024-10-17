@@ -388,3 +388,46 @@ main {
 .chooseCards-section button {
   width: 250px;
 }
+
+/* ..... Section 7 ..... */
+
+.discover-section {
+  height: 750px;
+  background-color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.discover-section > div {
+  height: 100%;
+  width: 600px;
+}
+
+.left-discover-container {
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+}
+
+.left-discover-container img {
+  height: 590px;
+}
+
+.right-immunity-container {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-immunity-container div {
+  width: 450px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.discover-section button {
+  width: 250px;
+}
