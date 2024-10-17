@@ -474,3 +474,46 @@ main {
   align-items: center;
   margin-bottom: 30px;
 }
+
+/* ..... Section 10 ..... */
+
+.follow-section {
+  padding-top: 60px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ..... Section 11 ..... */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-green);
+}
+
+.gallery div {
+  width: 250px;
+  position: relative;
+  top: -120px;
+}
+
+.gallery div:nth-child(1) {
+  rotate: -18deg;
+}
+
+.gallery div:nth-child(2) {
+  rotate: 17deg;
+}
+
+.gallery div:nth-child(3) {
+  rotate: -20deg;
+}
+
+.gallery div:nth-child(4) {
+  rotate: 18deg;
+}
+
+.gallery div img {
+  width: 100%;
+}
